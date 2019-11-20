@@ -97,7 +97,7 @@ def mainRunner(file_locn):
 	#to_date = sys.argv[2]
 	
 	modifyColumn(file_locn)
-	conn =cx_Oracle.connect(createConn('fusion','fusion','indl124087.in.oracle.com','1522','in124087'))
+	conn =cx_Oracle.connect(createConn('user','pwd','host','port','sid'))
 	conn.begin()
 	
 	#print file_locn
@@ -111,7 +111,7 @@ def mainRunner(file_locn):
 	
 
 #File location format printed
-print "Please specify file locn: 		Ex: C:\\Users\\tparayil.ORADEV\\Downloads\\TopCloudSlowClicksReport_CLOUD_ProjectsDomain_PRJ_ALL_Production_2017-02-20.xlsx"
+print "Please specify file loc"
 #Date format printed
 print "Please specify date in this format : 2017-02-05    2017-02-19"
 print "Please execute mainRunner with the params"
